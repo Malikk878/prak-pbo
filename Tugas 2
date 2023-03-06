@@ -1,0 +1,26 @@
+class Ku :
+    def __init__(self, nama, nim, kelas, sks):
+        self.nama = nama
+        self.nim = nim
+        self.kelas = kelas
+        self.sks = sks
+
+    def cetak(self):
+        print("Nama     : ", self.nama)
+        print("NIM      : ", self.nim)
+        print("Kelas    : ", self.kelas)
+        print("SKS      : ", self.sks)
+    
+Malik = Ku("M Malik Agustian", 121140148, "RB", 20)
+
+Malik.cetak()
+
+print()
+print("C untuk cetak ulang data")
+stop = False
+while stop == False:
+    button = input("inputkan C :")
+    if button == "C":
+        Malik.cetak()
+    else :
+        stop = True
