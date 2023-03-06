@@ -1,0 +1,7 @@
+kotak_bintang = int(input('Input besar kotak: '))
+print()
+ 
+for i in range(kotak_bintang):
+  for j in range(kotak_bintang):
+    print(' *',end='')
+  print()
